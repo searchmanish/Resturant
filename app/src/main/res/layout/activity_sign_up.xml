@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:id="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/applogo"
+            android:layout_marginTop="@dimen/padding_medium_10dp"
+            android:layout_marginBottom="@dimen/padding_medium_10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fullname"
+            android:textColor="@color/logoColor"
+            android:layout_below="@id/logo"
+            android:layout_marginRight="@dimen/padding_too_large_30"
+            android:layout_marginLeft="@dimen/padding_too_large_30"
+            android:layout_marginTop="@dimen/padding_medium_10dp"
+            android:paddingLeft="@dimen/padding_small_5"
+            android:paddingTop="@dimen/padding_small_5"
+            android:hint="@string/full_name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_email"
+            android:layout_below="@id/fullname"
+            android:textColor="@color/logoColor"
+            android:layout_marginRight="@dimen/padding_too_large_30"
+            android:layout_marginLeft="@dimen/padding_too_large_30"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:paddingLeft="@dimen/padding_small_5"
+            android:paddingTop="@dimen/padding_small_5"
+            android:hint="@string/email"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_number"
+            android:layout_below="@id/user_email"
+            android:textColor="@color/logoColor"
+            android:layout_marginRight="@dimen/padding_too_large_30"
+            android:layout_marginLeft="@dimen/padding_too_large_30"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:paddingLeft="@dimen/padding_small_5"
+            android:paddingTop="@dimen/padding_small_5"
+            android:hint="@string/phone_no"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:layout_below="@id/phone_number"
+            android:textColor="@color/logoColor"
+            android:layout_marginRight="@dimen/padding_too_large_30"
+            android:layout_marginLeft="@dimen/padding_too_large_30"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:paddingLeft="@dimen/padding_small_5"
+            android:paddingTop="@dimen/padding_small_5"
+            android:hint="@string/username"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:layout_below="@id/username"
+            android:textColor="@color/logoColor"
+            android:layout_marginRight="@dimen/padding_too_large_30"
+            android:layout_marginLeft="@dimen/padding_too_large_30"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:paddingLeft="@dimen/padding_small_5"
+            android:paddingTop="@dimen/padding_small_5"
+            android:hint="@string/password"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/retype_password"
+            android:inputType="textPassword"
+            android:layout_below="@id/password"
+            android:textColor="@color/logoColor"
+            android:layout_marginRight="@dimen/padding_too_large_30"
+            android:layout_marginLeft="@dimen/padding_too_large_30"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:paddingLeft="@dimen/padding_small_5"
+            android:paddingTop="@dimen/padding_small_5"
+            android:hint="@string/retype_password"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/create_account"
+            android:text="@string/create_account"
+            android:gravity="center_horizontal"
+            android:background="@drawable/ripple_effect"
+            android:textColor="@color/white"
+            android:layout_below="@id/retype_password"
+            android:layout_marginRight="@dimen/padding_too_large_30"
+            android:layout_marginLeft="@dimen/padding_too_large_30"
+            android:layout_marginTop="@dimen/padding_extra_large_20"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout_signin"
+            android:background="@drawable/ripple_effect_transparentbg"
+            android:layout_below="@id/create_account"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_medium_10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/already_member"
+                android:text="@string/already_member"
+                android:textColor="@color/logoColor"
+                android:layout_marginRight="@dimen/padding_small_5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signin_here"
+                android:text="@string/signin"
+                android:textColor="@color/logoColor" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

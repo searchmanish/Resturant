@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:id="@+id/user_img"
+        android:src="@drawable/dhaba"
+        android:paddingTop="@dimen/padding_too_large_30"
+        android:paddingBottom="@dimen/padding_small_5"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nav_userrname"
+        android:layout_marginTop="@dimen/padding_small_5"
+        android:text="Guest User"
+        android:layout_below="@id/user_img"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/logoColor"
+        android:textStyle="bold"
+        android:textSize="@dimen/txt_size_extra_large_15"/>
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.m.prakashdhaba.cart.CartDetails">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbar"
+                android:background="@color/black"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           app:layout_behavior="@string/appbar_scrolling_view_behavior"
+           android:background="@color/white">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/white"
+               android:textColor="@color/colorAccent"
+               android:gravity="center"
+               android:id="@+id/cart_count"
+               android:padding="@dimen/padding_small_5"
+               android:layout_alignParentTop="true"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_cartitem"
+                android:layout_below="@id/cart_count"
+                android:layout_above="@+id/blackline1">
+
+            </android.support.v7.widget.RecyclerView>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:orientation="horizontal"
+               android:id="@+id/blackline1"
+               android:background="@color/black"
+               android:layout_above="@id/layout_2"></LinearLayout>
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/layout_2"
+               android:padding="@dimen/padding_medium_10dp"
+               android:background="@color/white"
+               android:layout_alignParentBottom="true">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/cart_totalamt"
+                   android:textColor="@color/black"
+                   android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                   android:layout_alignParentLeft="true"
+                   android:layout_marginLeft="@dimen/padding_small_5"/>
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/continuebtn"
+                   android:text="@string/continue_tag"
+                   android:gravity="center_horizontal"
+                   android:background="@drawable/ripple_effect"
+                   android:textColor="@color/white"
+                   android:layout_alignParentRight="true"
+                   android:layout_margin="@dimen/padding_small_5"/>
+
+
+
+
+           </RelativeLayout>
+
+
+
+
+
+
+
+       </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
