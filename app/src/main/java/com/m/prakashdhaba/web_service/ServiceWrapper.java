@@ -13,6 +13,7 @@ import com.m.prakashdhaba.bean_response.NewPassword;
 import com.m.prakashdhaba.bean_response.NewProdResponse;
 import com.m.prakashdhaba.bean_response.NewUserRegistration;
 import com.m.prakashdhaba.bean_response.OrderSummery;
+import com.m.prakashdhaba.bean_response.PlaceOrder;
 import com.m.prakashdhaba.bean_response.ProductDetail_Res;
 import com.m.prakashdhaba.bean_response.userSignin;
 import com.m.prakashdhaba.utility.Constant;
@@ -152,6 +153,13 @@ public class ServiceWrapper {
     // edit cart item
     public Call<EditCartItem> editcartcartprodqty(String securcode, String user_id, String prod_id, String prod_qty){
         return mServiceInterface.editCartQty(convertPlainString(securcode), convertPlainString(user_id), convertPlainString(prod_id),  convertPlainString(prod_qty) );
+    }
+
+    // get place order api
+    public Call<PlaceOrder> placceOrdercall(String securcode, String user_id, String paymentorder_id, String payment_id, String address_id,
+                                            String total_price, String qoute_id, String delivermode){
+        return mServiceInterface.PlaceOrderCall(convertPlainString(securcode), convertPlainString(user_id), convertPlainString(paymentorder_id), convertPlainString(payment_id),
+                convertPlainString(address_id), convertPlainString(total_price), convertPlainString(qoute_id), convertPlainString( delivermode));
     }
 
 

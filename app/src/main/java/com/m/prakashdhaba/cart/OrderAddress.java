@@ -75,7 +75,7 @@ public class OrderAddress extends AppCompatActivity {
                 totalamount+ " buy from app "+"--" +SharePreferenceUtils.getInstance().getString(Constant.USER_name) );
 
 
-        /* For order and payment
+        // For order and payment
 
 
        // totalamount ="12";
@@ -98,7 +98,7 @@ public class OrderAddress extends AppCompatActivity {
             }
         });
 
-         */
+
 
         LinearLayoutManager mLayoutManger3 = new LinearLayoutManager( this, LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(mLayoutManger3);

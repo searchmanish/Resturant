@@ -10,6 +10,7 @@ import com.m.prakashdhaba.bean_response.NewPassword;
 import com.m.prakashdhaba.bean_response.NewProdResponse;
 import com.m.prakashdhaba.bean_response.NewUserRegistration;
 import com.m.prakashdhaba.bean_response.OrderSummery;
+import com.m.prakashdhaba.bean_response.PlaceOrder;
 import com.m.prakashdhaba.bean_response.ProductDetail_Res;
 import com.m.prakashdhaba.bean_response.userSignin;
 
@@ -161,5 +162,19 @@ public interface ServiceInterface {
             @Part("user_id") RequestBody user_id,
             @Part("prod_id") RequestBody prod_id,
             @Part("prod_qty") RequestBody prod_qty
+    );
+
+    // place order api
+    @Multipart
+    @POST("buyonline/placeorderapi.php")
+    Call<PlaceOrder> PlaceOrderCall(
+            @Part("securecode") RequestBody securecode,
+            @Part("user_id") RequestBody user_id,
+            @Part("paymentorder_id") RequestBody paymentorder_id,
+            @Part("payment_id") RequestBody payment_id,
+            @Part("address_id") RequestBody address_id,
+            @Part("total_price") RequestBody total_price,
+            @Part("qoute_id") RequestBody qoute_id,
+            @Part("deliverymode") RequestBody deliverymode
     );
 }
